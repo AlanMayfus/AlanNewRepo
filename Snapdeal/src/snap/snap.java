@@ -1,5 +1,7 @@
 package snap;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +17,7 @@ public class snap {
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://www.snapdeal.com");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		WebElement search = driver.findElement(By.xpath("//input[@id='inputValEnter']"));
 		search.sendKeys("Ray Ban");
 		WebElement searchButton =driver.findElement(By.xpath("//Button[@class='searchformButton col-xs-4 rippleGrey']"));
