@@ -29,6 +29,7 @@ public class snap {
 		ac.moveToElement(prod1).perform();
 		prod1.click();
 		prod1.getAttribute("value");
+		driver.quit();
 		//WebElement prod2 = driver.findElement(By.xpath("//div[@class='clearfix row-disc']//div[@supc='SDL838854953']"));
 		//WebElement prod3 = driver.findElement(By.xpath("//div[@class='clearfix row-disc']//div[@supc='SDL531124225']"));
 		//WebElement prod4 = driver.findElement(By.xpath("//div[@class='clearfix row-disc']//div[@supc='SDL702386596']"));
